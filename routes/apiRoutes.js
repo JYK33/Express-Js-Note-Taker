@@ -41,5 +41,9 @@ router.post('/',(req, res) => {
 });
 
 // BOUNS - BE ABLE TO DELETE REQUEST
+router.delete("/:id", function(req,res){
+    let data = fs.readFileSync('./db/db.json', 'utf8');
+    const dataFromJSON = JSON.parse(data)
+})
 
 module.exports = router;
